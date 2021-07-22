@@ -1,5 +1,5 @@
 # Robotronics-Hackathon-Amity-Mayur-Vihar
 
-1.I have uploaded files with proper folders
+1.PPT uploaded on link - 
 
-2.Will require to use command prompt to start environment before starting, for which I have sent document on Whatsapp to you
+2.Will require to install flask, pyrebase4, pycryptodome modules in virtual environment.

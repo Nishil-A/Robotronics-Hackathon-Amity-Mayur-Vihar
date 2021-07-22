@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Medicines | </title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    </head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin:0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Raleway', sans-serif;
+        background: linear-gradient(to right,darkgreen, green);
+        color: #ccc;
+        line-height: 1.8;
+      }
+
+      #container {
+        margin: 30px auto;
+        max-width: 400px;
+        padding: 30px;
+      }
+
+      /* form */
+
+      .form-wrap {
+        background: #fff;
+        padding: 25px 35px;
+        color: #333;
+        transition: 400ms ease;
+        animation-name: form-move;
+        animation-duration: 3s;
+        /* animation-fill-mode: forwards; */
+        animation-iteration-count: 1;
+        border-radius:15px;
+      }
+      @keyframes form-move{
+          33%{
+        transform: rotate(1turn);
+          }
+          66%{
+            transform: skew(1deg, 0deg);
+          }
+          90%{
+            transform: skew(-1deg, 0deg);
+          }
+          100%{
+              transform: skew(0deg,0deg);
+          }
+      }
+
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+      }
+
+      .form-wrap button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 30px;
+        background: #49c1a2;
+        color: #fff;
+        cursor: pointer;
+        font-size: 23px;
+        transition: 300ms ease;
+        border-radius: 4px;
+      }
+
+      .form-wrap button:hover {
+        background: #37a08e;
+      }
+    </style>
+    <body>
+        <div id="container">
+          <div class="form-wrap">
+            <u><h1>Medicines</h1></u>
+            <p><i><b>Suggested as per Availability and Volume.</i></b></p>
+            {% for i in numbers %}
+              <p>{{give[i]}}: {{store_information[i]}}</p>
+            {% endfor %}
+            
+          </div>
+        </div>
+      </body>
+    </html>
+</body>
+</html>

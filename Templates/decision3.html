@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>User Identity</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    </head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin:0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Raleway', sans-serif;
+        background: linear-gradient(to right,#49c1a2, #37a08e);
+        color: #ccc;
+        line-height: 1.8;
+      }
+
+      #container {
+        margin: 30px auto;
+        max-width: 400px;
+        padding: 30px;
+      }
+
+      /* form */
+
+      .form-wrap {
+        background: #ddd;
+        padding: 25px 35px;
+        color: #333;
+        transition: 400ms ease;
+      }
+
+      .form-wrap:hover{
+          background: #f4f4f4;
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+      }
+
+      .form-wrap button {
+        display: block;
+        width: 100%;
+        padding: 40px;
+        margin-top: 30px;
+        background: #49c1a2;
+        color: #fff;
+        cursor: pointer;
+        font-size: 23px;
+        transition: 300ms ease;
+      }
+
+      .form-wrap button:hover {
+        background: #37a08e;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Who Are You?</h1>
+        <p>Get Medicine Suggestions. Or bring your shop Online with <i>Medvailable</i>.</p>
+        <form action = "/update_cl">
+          <button type="submit" class="btn">Customer</button>
+        </form>
+        <form action = "/update_ch">
+          <button type="submit" class="btn">Chemist</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
